@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-//这里的'/' 是users/的根目录下
+//这里的'/' article/的根目录下
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('文章页面');
 });
 
 // http://127.0.0.1:3000/users/reg
-router.get('/reg', function(req, res, next) {
-  res.send('这个是注册页面');
+router.post('/add', function(req, res, next) {
+  res.send('加载页面');
 });
 
 module.exports = router;
